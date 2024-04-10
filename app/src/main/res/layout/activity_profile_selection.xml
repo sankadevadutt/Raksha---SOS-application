@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".profile_selection">
+
+    <Button
+        android:id="@+id/btnback4"
+        android:layout_width="100dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="32dp"
+        android:text="Back"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="52dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnback4"
+        app:srcCompat="@drawable/profile_bgless" />
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:text="Profile View"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfile"
+        app:layout_constraintStart_toEndOf="@+id/ivProfile"
+        app:layout_constraintTop_toTopOf="@+id/ivProfile" />
+
+    <ImageView
+        android:id="@+id/iveditprofile"
+        android:layout_width="52dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfile"
+        app:srcCompat="@drawable/edit" />
+
+    <TextView
+        android:id="@+id/tveditprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:text="Edit Profile"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iveditprofile"
+        app:layout_constraintStart_toEndOf="@+id/iveditprofile"
+        app:layout_constraintTop_toTopOf="@+id/iveditprofile" />
+
+    <ImageView
+        android:id="@+id/ivpswdchange"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/iveditprofile"
+        app:layout_constraintStart_toStartOf="@+id/iveditprofile"
+        app:layout_constraintTop_toBottomOf="@+id/iveditprofile"
+        app:srcCompat="@android:drawable/ic_lock_lock" />
+
+    <TextView
+        android:id="@+id/tvpswdchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:clickable="true"
+        android:text="Change Password"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivpswdchange"
+        app:layout_constraintStart_toEndOf="@+id/ivpswdchange"
+        app:layout_constraintTop_toTopOf="@+id/ivpswdchange"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ImageView
+        android:id="@+id/ivpinchange"
+        android:layout_width="52dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/iveditprofile"
+        app:layout_constraintStart_toStartOf="@+id/iveditprofile"
+        app:layout_constraintTop_toBottomOf="@+id/ivpswdchange"
+        app:srcCompat="@drawable/ic_pin" />
+
+    <TextView
+        android:id="@+id/tvpinchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:text="Change pin"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivpinchange"
+        app:layout_constraintStart_toEndOf="@+id/ivpinchange"
+        app:layout_constraintTop_toTopOf="@+id/ivpinchange" />
+
+    <ImageView
+        android:id="@+id/ivlogout"
+        android:layout_width="52dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/ivpinchange"
+        app:layout_constraintTop_toBottomOf="@+id/ivpinchange"
+        app:srcCompat="@drawable/ic_logout" />
+
+    <TextView
+        android:id="@+id/tvlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        android:text="Logout"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivlogout"
+        app:layout_constraintStart_toEndOf="@+id/ivlogout"
+        app:layout_constraintTop_toTopOf="@+id/ivlogout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".pinchange_phoneselection">
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Pin"
+        android:textColor="#F44336"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inlogin2"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etNewpswd3"
+        android:layout_width="282dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:inputType="numberPassword"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView43"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Confirm Pin"
+        android:textColor="#F44336"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewpswd3"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etpswdcnfrmsn2"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:inputType="numberPassword"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="132dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="60dp"
+        android:text="Change"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpswdcnfrmsn2"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnCancel2"
+        android:layout_width="132dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:text="Cancel"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChange"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Enter account password"
+        android:textColor="#F44336"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inlogin2"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etNewpswd2"
+        android:layout_width="282dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnChange2"
+        android:layout_width="132dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="60dp"
+        android:text="Confirm"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewpswd2"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnCancel3"
+        android:layout_width="132dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:text="cancel"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChange2"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/inlogin2"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_white_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

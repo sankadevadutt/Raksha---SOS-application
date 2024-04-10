@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raksha.raksha">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_black_background"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Raksha">
+        <activity android:name=".editcontact"></activity>
+        <activity android:name=".senddetailsview" />
+        <activity android:name=".profile_selection" />
+        <activity android:name="._numberentry_forgotpassword" />
+        <activity android:name=".otpverificationforpasswordchange" />
+        <activity android:name=".forgotpassword" />
+        <activity android:name=".otpverification" />
+        <activity android:name=".homepage" />
+        <activity android:name=".notificationsendrequest" />
+        <activity android:name=".ProfileEdit" />
+        <activity android:name=".ContactDisplay" />
+        <activity android:name=".AddContact" />
+        <activity android:name=".Profile" />
+        <activity android:name=".pinchange_phoneselection" />
+        <activity android:name=".pinvalidation" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Loginpage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
